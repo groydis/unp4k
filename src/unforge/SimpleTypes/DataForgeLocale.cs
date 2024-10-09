@@ -31,7 +31,7 @@ namespace unforge
         {
             var element = this.DocumentRoot.CreateElement("LocID");
             var attribute = this.DocumentRoot.CreateAttribute("value");
-            attribute.Value = this.Value.ToString();
+            attribute.Value = $"{this.Value}";
             // TODO: More work here
             element.Attributes.Append(attribute);
             return element;
